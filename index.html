@@ -291,33 +291,14 @@
             <div class="row">
                 <div class="col-md-7">
                     <div class="contact-form">
-                        <form name="myForm" action="scripts/correo.html" method="post" onsubmit="return validateForm()">
+                        <form name="myForm" action="scripts/correo.html" method="post" onsubmit="return false;">
                             <input type="text" placeholder="Nombre" name="nombre" required />
                             <input type="email" placeholder="Correo" name="correo" required />
                             <input type="text" placeholder="Telefono de contacto" name="telefono" required />
                             <input type="text" placeholder="Asunto" name="asunto" required />
                             <textarea placeholder="Mensaje" name="mensaje" required></textarea>
                             <div class="g-recaptcha" data-sitekey="6LcOpRQpAAAAAEFhNlW9WqjycXIwZN74JSu4Yixl"></div>
-                            <input type="submit" value="Enviar" />
-                            <?php
-                            $correo = 0;
-                            if (isset($_REQUEST['correo'])) {
-                                $correo = $_REQUEST['correo'];
-                            }
-
-                            if ($correo === '1') {
-
-                            ?>
-                                <p><strong>Mensaje enviado.</strong></p>
-                                <script>
-                                    swal("Mensaje Enviado", 'Mensaje enviado <b style="color:green;">Éxitosamente!</b>', "success").then(function() {
-                                        window.location = "index.html";
-                                    });
-                                </script>
-                            <?php
-                            }
-                            $correo = 0;
-                            ?>
+                            <input type="submit" value="Enviar" disabled/>
                         </form>
                     </div>
                 </div>
