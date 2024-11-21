@@ -110,7 +110,7 @@
     <div id="header" class="header">
         <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
             <div class="container">
-                <a class="navbar-brand" href="index.php"><img src="imgs/logo.png" alt="#" /></a>
+                <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" alt="#" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -119,37 +119,37 @@
                     <ul class="nav navbar-nav ">
                         <li class="nav-item active"></li>
                         <li class="nav-item active">
-                            <a class="nav-link" id="hovercreado" href="index.php">Home</a>
+                            <a class="nav-link" id="hovercreado" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="hovercreado" href="nosotros.php">Nosotros</a>
+                            <a class="nav-link" id="hovercreado" href="nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" style="font-weight: bold; color:#01aceb !important; text-decoration: underline; " href="servicios.php">Servicios</a>
+                            <a class="nav-link" style="font-weight: bold; color:#01aceb !important; text-decoration: underline; " href="servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="hovercreado" href="nuestros-clientes.php">Nuestros Clientes</a>
+                            <a class="nav-link" id="hovercreado" href="nuestros-clientes.html">Nuestros Clientes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="hovercreado" href="nuestros-aliados.php">Nuestros Aliados</a>
+                            <a class="nav-link" id="hovercreado" href="nuestros-aliados.html">Nuestros Aliados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="hovercreado" href="beneficios.php">Beneficios</a>
+                            <a class="nav-link" id="hovercreado" href="beneficios.html">Beneficios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="hovercreado" href="preguntasfrecuentes.php">Preguntas Frecuentes</a>
+                            <a class="nav-link" id="hovercreado" href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="hovercreado" href="experiencia.php">Experiencia</a>
+                            <a class="nav-link" id="hovercreado" href="experiencia.html">Experiencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="hovercreado" href="casos-exito.php">Casos de Exito</a>
+                            <a class="nav-link" id="hovercreado" href="casos-exito.html">Casos de Exito</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="hovercreado" href="calculadora.php">Calculadora</a>
+                            <a class="nav-link" id="hovercreado" href="calculadora.html">Calculadora</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="hovercreado" href="contacto.php">Contacto</a>
+                            <a class="nav-link" id="hovercreado" href="contacto.html">Contacto</a>
                         </li>
 
                         <li class="nav-item .search-container">
@@ -423,7 +423,7 @@
             <div class="row">
                 <div class="col-md-7">
                     <div class="contact-form">
-                        <form name="myForm" action="scripts/correoservicios.php" method="post" onsubmit="return validateForm()">
+                        <form name="myForm" action="scripts/correoservicios.html" method="post" onsubmit="return validateForm()">
                             <input type="text" placeholder="Nombre" name="nombre" required />
                             <input type="email" placeholder="Correo" name="correo" required />
                             <input type="text" placeholder="Telefono de contacto" name="telefono" required />
@@ -443,7 +443,7 @@
                                 <p><strong>Mensaje enviado.</strong></p>
                                 <script>
                                     swal("Mensaje Enviado", 'Mensaje enviado <b style="color:green;">Éxitosamente!</b>', "success").then(function() {
-                                        window.location = "servicios.php";
+                                        window.location = "servicios.html";
                                     });
                                 </script>
                             <?php
@@ -477,8 +477,8 @@
                     <div class="item">
                         <h4 class="text-uppercase">Navegación</h4>
                         <ul>
-                            <li><a href="index.php">Home</a></li>
-                            <li><a href="contacto.php">Contacto</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
 
                         </ul>
                     </div>

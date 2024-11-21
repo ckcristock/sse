@@ -51,10 +51,10 @@ if ($_POST['g-recaptcha-response'] == '') {
 
        mail($para, $asunto, $mensajecliente, $header);
 
-       header("Location: ../nosotros.php?correo=1");
+       header("Location: ../nosotros.html?correo=1");
 }
 ?>
 
 <!-- <script>
-       window.location.href = '../nosotros.php?correo=1';
+       window.location.href = '../nosotros.html?correo=1';
 </script> -->

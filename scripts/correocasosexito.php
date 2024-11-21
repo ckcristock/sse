@@ -48,10 +48,10 @@ if ($_POST['g-recaptcha-response'] == '') {
 
        mail($para, $asunto, $mensajecliente, $header);
 
-       header("Location: ../casos-exito.php?correo=1");
+       header("Location: ../casos-exito.html?correo=1");
 }
 ?>
 
 <!-- <script>
-       window.location.href = '../casos-exito.php?correo=1';
+       window.location.href = '../casos-exito.html?correo=1';
 </script> -->

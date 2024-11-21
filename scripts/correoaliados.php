@@ -47,10 +47,10 @@ if ($_POST['g-recaptcha-response'] == '') {
 
        mail($para, $asunto, $mensajecliente, $header);
 
-       header("Location: ../nuestros-aliados.php?correo=1");
+       header("Location: ../nuestros-aliados.html?correo=1");
 }
 ?>
 
 <!-- <script>
-       window.location.href = '../nuestros-aliados.php?correo=1';
+       window.location.href = '../nuestros-aliados.html?correo=1';
 </script> -->
