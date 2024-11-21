@@ -84,6 +84,7 @@
                             },
                             complete: function() {
                                 $this.text(this.countNum);
+                                //alert('finished');
                             },
                         }
                     );
@@ -92,6 +93,7 @@
             }
         });
     </script>
+
 
     <script>
         $(function() {
@@ -171,6 +173,8 @@
         </nav>
     </div>
 
+
+
     <div id="home" class="slider" style="margin-top: 99px; ">
         <div id="main_slider" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -181,9 +185,12 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="imgs/6dos.jpg" alt="slider_img" />
+
+
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="imgs/slide1.jpg" alt="slider_img" />
+
                 </div>
             </div>
 
@@ -195,6 +202,7 @@
             </a>
         </div>
     </div>
+
 
     <div class="container" style="background-color: #f3f3f4; width: 100%; padding-bottom: 2px; margin-bottom:1px;">
         <div class="row">
@@ -213,41 +221,171 @@
             <div class="col-md-3">
                 <div id="counter">
                     <p class="counter-value" data-count="15" style="display: inline-block; font-weight: bold; font-size: 35px;"></p>
-                    <p style="display: inline-block; margin: 4px;">Años de experiencia</p>
+                    <p style="display: inline-block; margin: 4px;">Proyectos Implementados</p>
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div id="counter">
-                    <p class="counter-value" data-count="18" style="display: inline-block; font-weight: bold; font-size: 35px;"></p>
-                    <p style="display: inline-block; margin: 4px;">Proyectos</p>
+                    <p class="counter-value" data-count="260" style="display: inline-block; font-weight: bold; font-size: 35px;"></p>
+                    <p style="display: inline-block; margin: 4px;">Colectores Solares Instalados</p>
+                    <p></p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal-body">
-        <h3 class="title">¡Contáctanos!</h3>
-        <p class="sub">Déjanos tus datos y nos pondremos en contacto contigo lo más pronto posible.</p>
-        <form name="myForm" action="#" method="post" onsubmit="return validateForm()">
-            <div class="form-group">
-                <label for="nombre">Nombre Completo</label>
-                <input type="text" class="form-control" name="nombre" required />
+
+    <div id="about" class="about_section layout_padding" style="padding: 10px 0 !important ;">
+        <div class="container">
+            <p style="color:#01aceb; font-size:25px; font-weight: 340;margin-top:1px !important;"><b>Soluciones Sostenibles en Energía - SSE</b></p>
+            <div class="row">
+
+                <div class="col-md-5">
+
+                    <p style="font-size:35px;text-transform: none !important;"><b>Comprometidos con el Ambiente</b></p>
+                    <p>
+                        Aportamos soluciones consistentes en el aprovechamiento de la energía del sol, tanto para la producción de energía eléctrica, a través del efecto fotovoltaico; como para la producción de agua caliente para uso domestico o para climatización de piscinas, entre otros servicios.
+                    </p>
+                    <p>
+                        Soluciones diseñadas para clientes residenciales, industriales o rurales. Tanto para zonas con acceso a la red eléctrica como para Zonas No Interconectadas (ZNI). Implementando proyectos con tecnologías verdes, aportando a la disminución de emisiones de Gases de Efecto Invernadero (GEI) asociadas a la generación de energía de formas convencionales.
+                    </p>
+                </div>
+                <div class="col-md-6 offset-md-1">
+                    <div class="full text_align_center">
+                        <img class="img-responsive" src="imgs/ps13.gif" alt="#" />
+                        <br>
+                        <br>
+                        <p><strong>Fotografía: <em>Pricesmart</em></strong></p>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="correo">Correo Electrónico</label>
-                <input type="email" class="form-control" name="correo" required />
-            </div>
-            <div class="form-group">
-                <label for="mensaje">Mensaje</label>
-                <textarea class="form-control" rows="5" name="mensaje" required></textarea>
-            </div>
-            <div class="form-group">
-                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+        </div>
+        <div class="divnum"></div>
     </div>
 
+
+
+
+
+
+
+    <div id="beneficios">
+        <div class="container"></div>
+    </div>
+
+
+
+    <div id="contacto">
+        <div class="container"></div>
+    </div>
+
+    <div class="hiw_section layout_padding" style="background: #eeefef; margin-top: 58px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h3 style="margin-top: 20px; font-size:40px;"><b>CONTÁCTANOS POR WHATSAPP (A TU DERECHA) Ó TAMBIEN POR AQUÍ:</b></h3>
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="contact-form">
+                        <form name="myForm" action="scripts/correo.html" method="post" onsubmit="return validateForm()">
+                            <input type="text" placeholder="Nombre" name="nombre" required />
+                            <input type="email" placeholder="Correo" name="correo" required />
+                            <input type="text" placeholder="Telefono de contacto" name="telefono" required />
+                            <input type="text" placeholder="Asunto" name="asunto" required />
+                            <textarea placeholder="Mensaje" name="mensaje" required></textarea>
+                            <div class="g-recaptcha" data-sitekey="6LcOpRQpAAAAAEFhNlW9WqjycXIwZN74JSu4Yixl"></div>
+                            <input type="submit" value="Enviar" />
+                            <?php
+                            $correo = 0;
+                            if (isset($_REQUEST['correo'])) {
+                                $correo = $_REQUEST['correo'];
+                            }
+
+                            if ($correo === '1') {
+
+                            ?>
+                                <p><strong>Mensaje enviado.</strong></p>
+                                <script>
+                                    swal("Mensaje Enviado", 'Mensaje enviado <b style="color:green;">Éxitosamente!</b>', "success").then(function() {
+                                        window.location = "index.html";
+                                    });
+                                </script>
+                            <?php
+                            }
+                            $correo = 0;
+                            ?>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5 text_align_center">
+                    <img class="img-responsive" src="imgs/ps22.jpg" alt="#" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subcribe">
+        <div class="container"></div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer_blog_section">
+                        <img src="imgs/logo.png" alt="#" />
+                        <p style="margin-top: 5px;">Comprometidos con el Ambiente.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12">
+                    <div class="item">
+                        <h4 class="text-uppercase">Navegación</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="item">
+                        <h4 class="text-uppercase">Información de Contacto</h4>
+                        <p><strong>Dirección Oficinas:</strong></p>
+                        <p><img src="imgs/location.png" alt="#" /> Calle 93 No 12-14 ofc. 701 Edif. Tempo</p>
+                        <p>Bogotá, Colombia</p>
+                        <p><strong>Atención al Cliente:</strong></p>
+                        <p><img src="imgs/phone_icon.png" alt="#" /> 317 3700 639</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="item">
+                        <h4 class="text-uppercase">Síguenos</h4>
+                        <ul>
+                            <li><a href="https://www.facebook.com/Ssegreen-101933321835308" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/sse.green/" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/in/ssegreen/" target="_blank">Linkedin</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCArRTZxY2uXE8cUt8KhwlSg" target="_blank">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <p>Copyright 2019 Design by <a href="https://html.design">Free Html Templates</a></p>
+        </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <div class="container">
+        <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+        <a href="https://wa.me/573173700639?text=Me%20gustaría%20obtener%20información%20sobre%20la%20instalación%20de%20los%20paneles%20solares.%20Gracias" class="whatsapp" target="_blank">
+            <i class="fa fa-whatsapp whatsapp-icon"></i>
+        </a>
+    </div>
 </body>
+
 </html>
