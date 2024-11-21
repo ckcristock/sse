@@ -299,27 +299,7 @@
                             <textarea placeholder="Mensaje" name="mensaje" required></textarea>
                             <div class="g-recaptcha" data-sitekey="6LcOpRQpAAAAAEFhNlW9WqjycXIwZN74JSu4Yixl"></div>
                             <input type="submit" value="Enviar" />
-                            <?php
-                            $correo = 0;
-                            if (isset($_REQUEST['correo'])) {
-                                $correo = $_REQUEST['correo'];
-                            }
-
-                            if ($correo === '1') {
-
-                            ?>
-                                <p><strong>Mensaje enviado.</strong></p>
-                                <script>
-                                    swal("Mensaje Enviado", 'Mensaje enviado <b style="color:green;">Éxitosamente!</b>', "success").then(function() {
-                                        window.location = "beneficios.html
-                                        ";
-                                    });
-                                </script>
-                            <?php
-                            }
-                            $correo = 0;
-                            ?>
-                        </form>
+                                                    </form>
                     </div>
                 </div>
                 <div class="col-md-5 text_align_center">
